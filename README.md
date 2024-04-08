@@ -1,2 +1,3 @@
-# SPfashion
-Aplicativo sobre a moda na cidade de São Paulo
+# ASPfashion
+### Integrantes: Marcos Vinícius Barros Freire
+
