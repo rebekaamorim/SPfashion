@@ -7,4 +7,4 @@
 
 ### Saiba mais sobre o projeto!
 - [Descrição das Telas](https://github.com/rebekaamorim/SPfashion/wiki/Aplicativo-SPFashion)
-- [Lista de Widgets usados]()
+- [Lista de Widgets usados](https://github.com/rebekaamorim/SPfashion/wiki/Widgets-usados)
