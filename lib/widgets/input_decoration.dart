@@ -7,10 +7,11 @@ class InputDecorations {
     required Icon icone
   }) {
     return InputDecoration(
-       enabledBorder: const UnderlineInputBorder(borderSide:BorderSide(color:Colors.deepOrange)),
-      focusedBorder: const UnderlineInputBorder(borderSide: BorderSide(color: Colors.deepPurple, width: 2)),
+       enabledBorder: const UnderlineInputBorder(borderSide:BorderSide(color:Colors.deepPurple)),
+      focusedBorder: const UnderlineInputBorder(borderSide: BorderSide(color: Colors.deepOrange, width: 2)),
         hintText: hinttext,
         labelText: labeltext,
+        labelStyle: const TextStyle(color: Colors.deepPurple),
         prefixIcon: icone,
     );
   }
