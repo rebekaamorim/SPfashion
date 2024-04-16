@@ -14,11 +14,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        //fundo da tela login
         body: Container(
           width: double.infinity,
           height: double.infinity,
           //Stack : colocar widget em cima do outro
           child: Stack(
+            //nessa children é chamado os métodos dos widgets
             children: [
               loginform(context)
             ],
@@ -37,6 +39,7 @@ class MyApp extends StatelessWidget {
                 const SizedBox( height: 250),
                 Container(
                   padding: const EdgeInsets.all(20),
+                  //centraliza no meio o container
                   margin: const EdgeInsets.symmetric(horizontal: 30),
                   width:double.infinity,
                   height: 350,
@@ -50,8 +53,10 @@ class MyApp extends StatelessWidget {
                         offset:Offset(0,5),
                       )
                     ] ),
+                // aqui tem o conteúdo dentro do container de fundo
                 child: Column(
                   children: [
+                    //posição de cada entrada de texto
                     const SizedBox(height:10,),
                     Text('Login', 
                           style: Theme.of(context).textTheme.headline4
@@ -60,6 +65,7 @@ class MyApp extends StatelessWidget {
                     Container(
                       child: Form(child: Column(
                         children: [
+                          //aqui são os texts que vão receber dados
                           TextFormField(
                             autocorrect: false,
                             //aqui é chamado a classe InputDecorations, utilizando seu método para receber os valores e tornar o código mais limpo
