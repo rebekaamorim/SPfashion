@@ -80,11 +80,22 @@ flutter:
   #       - asset: fonts/Schyler-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+  fonts:
+  - family: Chloe
+    fonts:
+    - asset: assets/fonts/quichesans-extrabold.otf
+  - family: Glacial
+    fonts:
+    - asset: assets/fonts/glacial.otf
+    
+    
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+  - assets/imgs/fungo_colorido.png
+  - assets/imgs/seta.png
+  - assets/imgs/fundo_sobreoevento.png
+  - assets/imgs/estrelinha.png
+
+  
