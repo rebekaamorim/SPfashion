@@ -84,9 +84,18 @@ flutter:
   - family: Chloe
     fonts:
     - asset: assets/fonts/quichesans-extrabold.otf
+  - family: Glacial
+    fonts:
+    - asset: assets/fonts/glacial.otf
+    
     
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
   - assets/imgs/fungo_colorido.png
+  - assets/imgs/seta.png
+  - assets/imgs/fundo_sobreoevento.png
+  - assets/imgs/estrelinha.png
+
+  
