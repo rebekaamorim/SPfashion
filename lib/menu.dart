@@ -104,7 +104,7 @@ class Menu extends StatelessWidget {
                                                 borderRadius: BorderRadius.circular(30), // Define o raio dos cantos
                                                 child: SizedBox(
                                                     width: 110,
-                                                    child: Image.asset('assets/imgs/imagem1.jpg'),
+                                                    child: Image.asset('assets/imgs/imagem1.png'),
                                                 ),
                                             ),
                                             Padding(
@@ -113,7 +113,7 @@ class Menu extends StatelessWidget {
                                                     borderRadius: BorderRadius.circular(30), // Define o raio dos cantos
                                                     child: SizedBox(
                                                         width: 110,
-                                                        child: Image.asset('assets/imgs/imagem2.jpg'),
+                                                        child: Image.asset('assets/imgs/imagem2.png'),
                                                     ),
                                                 ),
                                             ),
@@ -123,7 +123,7 @@ class Menu extends StatelessWidget {
                                                     borderRadius: BorderRadius.circular(30), // Define o raio dos cantos
                                                     child: SizedBox(
                                                         width: 110,
-                                                        child: Image.asset('assets/imgs/imagem3.jpg'),
+                                                        child: Image.asset('assets/imgs/imagem3.png'),
                                                     ),
                                                 ),
                                             ),
@@ -133,7 +133,7 @@ class Menu extends StatelessWidget {
                                                     borderRadius: BorderRadius.circular(30), // Define o raio dos cantos
                                                     child: SizedBox(
                                                         width: 110,
-                                                        child: Image.asset('assets/imgs/imagem4.jpg'),
+                                                        child: Image.asset('assets/imgs/imagem4.png'),
                                                     ),
                                                 ),
                                             ),
@@ -143,7 +143,7 @@ class Menu extends StatelessWidget {
                                                     borderRadius: BorderRadius.circular(30), // Define o raio dos cantos
                                                     child: SizedBox(
                                                         width: 110,
-                                                        child: Image.asset('assets/imgs/imagem5.jpg'),
+                                                        child: Image.asset('assets/imgs/imagem5.png'),
                                                     ),
                                                 ),
                                             ),
