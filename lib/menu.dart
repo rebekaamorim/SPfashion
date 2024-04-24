@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void menu() {
-    runApp(Menu());
+    runApp(const Menu());
 }
 
 class Menu extends StatelessWidget {
-    const Menu({Key? key}) : super(key: key);
+    const Menu({super.key});
 
     @override
     Widget build(BuildContext context) {
@@ -13,35 +13,38 @@ class Menu extends StatelessWidget {
             home: Scaffold(
                 appBar: AppBar(
                     title: const Text(
-                        'SPFASHION',
-                        style: TextStyle(fontSize: 26),
+                        'SPFashion',
+                        style: TextStyle(fontSize: 26, fontFamily: 'Chloe', color: Colors.pinkAccent),
                     ),
                     centerTitle: true,
                 ),
                 body: Center(
                     child: Column(
                         children: [
+                          const SizedBox(height: 10,),
                           Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                   Padding(
                                       padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.1),
-                                      child: Text(
-                                        '| Bem Vindo',
+                                      child:const  Text(
+                                        '| Acompanhe os eventos de SP!',
                                         style: TextStyle(
                                             fontSize: 24,
+                                            fontFamily: 'Chloe',
                                         ),
                                       ),
                                   ),
                               ],
                             ),
-                            SizedBox(height: 20),
+                            const SizedBox(height: 20),
                             Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                     Padding(
-                                        padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.125),
+                                        padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.125, top: 15),
+                                        
                                         child: GestureDetector(
                                             onTap: () {},
                                             child: Container(
@@ -55,43 +58,44 @@ class Menu extends StatelessWidget {
                                             ),
                                          ),
                                     ),
-                                    SizedBox(width: 20),
-                                    Expanded(
+                                    const SizedBox(width: 20),
+                                    const Expanded(
                                         child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                                 Text(
-                                                    'Sobre o evento',
-                                                    style: TextStyle(fontSize: 22),
+                                                    'São Paulo Fashion Week',
+                                                    style: TextStyle(fontSize: 22, fontFamily: 'Chloe', 
+                                                    ),
                                                 ),
                                                 SizedBox(height: 10),
                                                 Text(
                                                     'A Fashion Week é um momento emocionante na indústria da moda...',
-                                                    style: TextStyle(fontSize: 16),
+                                                    style: TextStyle(fontSize: 16, fontFamily: 'Glacial'),
                                                 ),
                                             ],
                                         ),
                                     ),
                                 ],
                             ),
-                            SizedBox(height: 20),
+                            const SizedBox(height: 20),
                             Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children:[
                                     Padding(
                                         padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.1),
-                                        child: Text(
+                                        child: const Text(
                                             'Looks + impactantes',
-                                            style: TextStyle(fontSize: 24),
+                                            style: TextStyle(fontSize: 24, fontFamily: 'Chloe', color: Colors.deepOrange),
                             ),
                                     ),
                                 ]
                             ),
-                          
+                            const SizedBox(height: 10,),
                             Padding(
                                 padding: EdgeInsets.symmetric(
                                     horizontal: MediaQuery.of(context).size.width * 0.10),
-                                child: Container(
+                                child: SizedBox(
                                     height: 140,
                                     child: ListView(
                                         scrollDirection: Axis.horizontal,
@@ -104,7 +108,7 @@ class Menu extends StatelessWidget {
                                                 ),
                                             ),
                                             Padding(
-                                                padding: EdgeInsets.only(left: 24.0),
+                                                padding: const EdgeInsets.only(left: 24.0),
                                                 child: ClipRRect(
                                                     borderRadius: BorderRadius.circular(30), // Define o raio dos cantos
                                                     child: SizedBox(
@@ -114,7 +118,7 @@ class Menu extends StatelessWidget {
                                                 ),
                                             ),
                                             Padding(
-                                                padding: EdgeInsets.only(left: 24.0),
+                                                padding: const EdgeInsets.only(left: 24.0),
                                                 child: ClipRRect(
                                                     borderRadius: BorderRadius.circular(30), // Define o raio dos cantos
                                                     child: SizedBox(
@@ -124,7 +128,7 @@ class Menu extends StatelessWidget {
                                                 ),
                                             ),
                                             Padding(
-                                                padding: EdgeInsets.only(left: 24.0),
+                                                padding: const EdgeInsets.only(left: 24.0),
                                                 child: ClipRRect(
                                                     borderRadius: BorderRadius.circular(30), // Define o raio dos cantos
                                                     child: SizedBox(
@@ -134,7 +138,7 @@ class Menu extends StatelessWidget {
                                                 ),
                                             ),
                                             Padding(
-                                                padding: EdgeInsets.only(left: 24.0),
+                                                padding:const EdgeInsets.only(left: 24.0),
                                                 child: ClipRRect(
                                                     borderRadius: BorderRadius.circular(30), // Define o raio dos cantos
                                                     child: SizedBox(
@@ -147,17 +151,27 @@ class Menu extends StatelessWidget {
                                     ),
                                 ),
                             ),
-                          MaterialButton(
-                              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-                              disabledColor: Colors.grey,
-                              color: Colors.deepOrange,
+                            const SizedBox(height: 20,),
+                            Container(
+                              margin: const EdgeInsets.symmetric(horizontal: 16,),
+                              child: Align(
+                              alignment: Alignment.centerRight,
+
+                              child:  SizedBox(
+                                width: 140,
+                                child: MaterialButton(
+                                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                                disabledColor: Colors.grey,
+                                color: Color.fromARGB(255, 225, 160, 255),
                                child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                              
+                                  
                                  children:[ Container(
-                                  padding: const EdgeInsets.symmetric(horizontal: 80, vertical: 10),
+                                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                                       child: const Text(
                                         'Vote agora!',
-                                        style: TextStyle(color: Colors.white, fontSize: 20),
+                                        
+                                        style: TextStyle(color: Colors.white, fontSize: 20, fontFamily: 'Glacial'),
                                       ),
                                   )]
                               ),
@@ -169,20 +183,26 @@ class Menu extends StatelessWidget {
                                  );
                                         },
                             ),
-                            SizedBox(height: 20),
+                            ),
+                            ),
+                           
+                            ),
+                            
+                          
+                            const SizedBox(height: 20),
                             Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children:[
                                     Padding(
                                         padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.1),
-                                        child: Text(
+                                        child: const Text(
                                             'Você é um expert de moda?',
-                                            style: TextStyle(fontSize: 24),
+                                            style: TextStyle(fontSize: 24, fontFamily: 'Chloe', color: Colors.pinkAccent),
                                         ),
                                     ),
                                 ]
                             ),
-                            SizedBox(height: 5),
+                            const SizedBox(height: 10),
                             Padding(
                                 padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.10),
                                 child: ClipRRect(
