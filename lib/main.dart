@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:aplicacao_spfashion/eventos.dart';
+import 'package:aplicacao_spfashion/menu.dart';
 import 'package:aplicacao_spfashion/widgets/input_decoration.dart';
 import 'package:flutter/material.dart';
 
@@ -111,7 +112,7 @@ class Login extends StatelessWidget {
                                    Navigator.push(
                     context,
                     MaterialPageRoute(builder:
-                       (context) => const Eventos()),
+                       (context) => const Menu()),
                          );
                                 },
                               )

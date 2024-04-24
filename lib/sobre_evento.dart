@@ -84,7 +84,32 @@ class Sobre extends StatelessWidget{
     
       
      ),),
-     
+    
+      GestureDetector( onTap: () {
+                  // Voltar para a tela anterior
+                },
+              
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Image.asset('assets/imgs/1.png', width: 400, fit: BoxFit.contain,),
+                    
+                  ],
+                ),),
+              
+        
+      GestureDetector( onTap: () {
+                  // Voltar para a tela anterior
+                  
+                },
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Image.asset('assets/imgs/2.png', width: 400, fit: BoxFit.contain,),
+                    
+                  ],
+                ),),
+  
         ],),),),),],),
       ),
     );
