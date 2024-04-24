@@ -83,10 +83,11 @@ flutter:
   fonts:
   - family: Chloe
     fonts:
-    - asset: assets/fonts/quichesans-extrabold.otf
+    - asset: assets/fonts/Chloe-Regular.otf
   - family: Glacial
     fonts:
     - asset: assets/fonts/glacial.otf
+  
     
     
   #
@@ -100,6 +101,8 @@ flutter:
   - assets/imgs/brilho.png
   - assets/imgs/1.png
   - assets/imgs/2.png
+  - assets/imgs/imgquiz.png
+  - assets/imgs/vermais.png
 
 
 

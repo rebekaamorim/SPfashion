@@ -19,7 +19,7 @@ class Sobre extends StatelessWidget{
          child:SingleChildScrollView(
                 child: Container(
                   padding: const EdgeInsets.all(20),
-                  margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
+                  margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
         child: Column(
           children: [
            
@@ -50,7 +50,7 @@ class Sobre extends StatelessWidget{
           ],
         ),
         
-        const SizedBox(height: 35,),
+        const SizedBox(height: 10,),
 
          Row( children: [
           const SizedBox(width: 35,),
@@ -73,7 +73,7 @@ class Sobre extends StatelessWidget{
             ),
           ],
         ),
-        const SizedBox(height: 5,),
+        const SizedBox(height: 10,),
         const Text('    A Fashion Week é um momento emocionante na indústria da moda, onde os designers apresentam suas últimas coleções em desfiles extravagantes. É um evento movimentado, cheio de criatividade, estilo e glamour. Modelos desfilam pela passarela, exibindo designs vanguardistas e estabelecendo novas tendências para a próxima temporada. '
      'A Fashion Week não se trata apenas de roupas; é uma celebração da arte, inovação e autoexpressão. Da primeira fila aos bastidores, a energia é palpável à medida que entusiastas da moda, celebridades e membros da indústria se reúnem para testemunhar a magia da Fashion Week. É uma época em que o mundo da moda brilha intensamente, inspirando-nos a todos a abraçar o nosso estilo e criatividade únicos.',
     textAlign: TextAlign.justify,
@@ -84,7 +84,7 @@ class Sobre extends StatelessWidget{
     
       
      ),),
-    
+    const SizedBox(height: 10,),
       GestureDetector( onTap: () {
                   // Voltar para a tela anterior
                 },
