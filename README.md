@@ -9,3 +9,4 @@
 - [Intuito das Telas + Protótipo](https://github.com/rebekaamorim/SPfashion/wiki/Aplicativo-SPFashion)
 - [Tabela técnica das telas](https://github.com/rebekaamorim/SPfashion/wiki/Widgets-usados)
 - [Ficha técnica dos Widgets Usados](https://github.com/rebekaamorim/SPfashion/wiki/Ficha-T%C3%A9cnica-Widgets)
+- [Telas e Navegação MVP](https://github.com/rebekaamorim/SPfashion/wiki/MVP-%E2%80%90-Finalizada) 
