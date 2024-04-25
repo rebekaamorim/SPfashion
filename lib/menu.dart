@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 void menu() {
     @override
     Widget build(BuildContext context) {
-    return MaterialApp(
-       debugShowCheckedModeBanner: false,
+    return const MaterialApp(
+      
       home: Menu()
     );
   }
@@ -19,7 +19,9 @@ class Menu extends StatelessWidget {
     @override
     Widget build(BuildContext context) {
         return MaterialApp(
+          debugShowCheckedModeBanner: false,
             home: Scaffold(
+              
                 appBar: AppBar(
                     title: const Text(
                         'SPFashion',

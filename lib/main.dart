@@ -1,6 +1,5 @@
 import 'dart:ui';
 
-import 'package:aplicacao_spfashion/eventos.dart';
 import 'package:aplicacao_spfashion/menu.dart';
 import 'package:aplicacao_spfashion/widgets/input_decoration.dart';
 import 'package:flutter/material.dart';
@@ -79,7 +78,7 @@ class Login extends StatelessWidget {
                                   autocorrect: false,
                                   obscureText: true,
                                   decoration: InputDecorations.inputDecoration(
-                                    hinttext: '********',
+                                    hinttext: '****',
                                     labeltext: 'Senha',
                                     icone: const Icon(Icons.lock_outline, color: Colors.deepPurple),
                                   ),
@@ -137,5 +136,3 @@ class Login extends StatelessWidget {
     );
   }
 }
-
- 
