@@ -30,9 +30,7 @@ class Login extends StatelessWidget {
           ),
         ),
         child: Column(
-          
           children: [
-            
             Expanded(
               child: SingleChildScrollView( 
                 child: Column(
