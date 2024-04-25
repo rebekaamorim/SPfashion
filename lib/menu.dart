@@ -1,6 +1,15 @@
+import 'package:aplicacao_spfashion/eventos.dart';
+import 'package:aplicacao_spfashion/sobre_evento.dart';
 import 'package:flutter/material.dart';
 
 void menu() {
+    @override
+    Widget build(BuildContext context) {
+    return MaterialApp(
+       debugShowCheckedModeBanner: false,
+      home: Menu()
+    );
+  }
     runApp(const Menu());
 }
 
@@ -18,7 +27,13 @@ class Menu extends StatelessWidget {
                     ),
                     centerTitle: true,
                 ),
-                body: Center(
+                body: Container(
+                    decoration: const BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage('assets/imgs/fundo_menu.png'),
+                            fit: BoxFit.cover,
+                        ),
+                    ),
                     child: Column(
                         children: [
                           const SizedBox(height: 10,),
@@ -42,42 +57,81 @@ class Menu extends StatelessWidget {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                    Padding(
-                                        padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.125, top: 15),
-                                        
-                                        child: GestureDetector(
-                                            onTap: () {},
-                                            child: Container(
-                                                width: 50,
-                                                height: 50,
-                                                color: Colors.blue,
-                                                child: Image.network(
-                                                    'https://via.placeholder.com/150',
-                                                    fit: BoxFit.cover,
-                                                ),
-                                            ),
-                                         ),
-                                    ),
-                                    const SizedBox(width: 20),
-                                    const Expanded(
-                                        child: Column(
-                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
-                                                Text(
-                                                    'São Paulo Fashion Week',
-                                                    style: TextStyle(fontSize: 22, fontFamily: 'Chloe', 
-                                                    ),
-                                                ),
-                                                SizedBox(height: 10),
-                                                Text(
-                                                    'A Fashion Week é um momento emocionante na indústria da moda...',
-                                                    style: TextStyle(fontSize: 16, fontFamily: 'Glacial'),
-                                                ),
-                                            ],
+                                  Padding(
+                                    padding: EdgeInsets.only(left: MediaQuery.of(context).size.width * 0.05, top: 15.0), // Reduzindo o espaçamento à esquerda do container
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(builder: (context) => Eventos())
+                                        );
+                                      },
+                                      child: Container(
+                                        width: 70,
+                                        height: 70,
+                                        child: Image.asset(
+                                          'assets/imgs/vermais.png',
+                                          fit: BoxFit.fill,
                                         ),
+                                      ),
                                     ),
+                                  ),
+                                  const SizedBox(width: 10), // Espaço entre os elementos
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(builder: (context) => Sobre()),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: 360,
+                                      decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                          colors: [
+                                            Color.fromARGB(255, 192, 115, 255),
+                                            Color.fromARGB(255, 255, 190, 115),
+                                            Color.fromARGB(172, 255, 218, 218),
+                                          ],
+                                          begin: Alignment.centerLeft,
+                                          end: Alignment.centerRight,
+                                        ),
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(30.0),
+                                          bottomLeft: Radius.circular(30.0),
+                                        ),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(16.0),
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              'São Paulo Fashion Week',
+                                              style: TextStyle(
+                                                fontSize: 22,
+                                                fontFamily: 'Chloe',
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                            SizedBox(height: 8),
+                                            Text(
+                                              'A Fashion Week é um momento emocionante na indústria da moda. É um período onde grandes estilistas e marcas apresentam suas coleções e tendências para a próxima estação.',
+                                              maxLines: 2,
+                                              overflow: TextOverflow.ellipsis,
+                                              style: TextStyle(
+                                                fontSize: 16,
+                                                fontFamily: 'Glacial',
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
                                 ],
-                            ),
+                              ),
                             const SizedBox(height: 20),
                             Row(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -104,7 +158,7 @@ class Menu extends StatelessWidget {
                                                 borderRadius: BorderRadius.circular(30), // Define o raio dos cantos
                                                 child: SizedBox(
                                                     width: 110,
-                                                    child: Image.asset('assets/imgs/imagem1.jpg'),
+                                                    child: Image.asset('assets/imgs/imagem1.png'),
                                                 ),
                                             ),
                                             Padding(
@@ -113,7 +167,7 @@ class Menu extends StatelessWidget {
                                                     borderRadius: BorderRadius.circular(30), // Define o raio dos cantos
                                                     child: SizedBox(
                                                         width: 110,
-                                                        child: Image.asset('assets/imgs/imagem2.jpg'),
+                                                        child: Image.asset('assets/imgs/imagem2.png'),
                                                     ),
                                                 ),
                                             ),
@@ -123,7 +177,7 @@ class Menu extends StatelessWidget {
                                                     borderRadius: BorderRadius.circular(30), // Define o raio dos cantos
                                                     child: SizedBox(
                                                         width: 110,
-                                                        child: Image.asset('assets/imgs/imagem3.jpg'),
+                                                        child: Image.asset('assets/imgs/imagem3.png'),
                                                     ),
                                                 ),
                                             ),
@@ -133,7 +187,7 @@ class Menu extends StatelessWidget {
                                                     borderRadius: BorderRadius.circular(30), // Define o raio dos cantos
                                                     child: SizedBox(
                                                         width: 110,
-                                                        child: Image.asset('assets/imgs/imagem4.jpg'),
+                                                        child: Image.asset('assets/imgs/imagem4.png'),
                                                     ),
                                                 ),
                                             ),
@@ -143,7 +197,7 @@ class Menu extends StatelessWidget {
                                                     borderRadius: BorderRadius.circular(30), // Define o raio dos cantos
                                                     child: SizedBox(
                                                         width: 110,
-                                                        child: Image.asset('assets/imgs/imagem5.jpg'),
+                                                        child: Image.asset('assets/imgs/imagem5.png'),
                                                     ),
                                                 ),
                                             ),
@@ -153,10 +207,9 @@ class Menu extends StatelessWidget {
                             ),
                             const SizedBox(height: 20,),
                             Container(
-                              margin: const EdgeInsets.symmetric(horizontal: 16,),
+                              margin: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.10,),
                               child: Align(
                               alignment: Alignment.centerRight,
-
                               child:  SizedBox(
                                 width: 140,
                                 child: MaterialButton(
@@ -164,13 +217,10 @@ class Menu extends StatelessWidget {
                                 disabledColor: Colors.grey,
                                 color: Color.fromARGB(255, 225, 160, 255),
                                child: Row(
-                              
-                                  
                                  children:[ Container(
                                   padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
                                       child: const Text(
                                         'Vote agora!',
-                                        
                                         style: TextStyle(color: Colors.white, fontSize: 20, fontFamily: 'Glacial'),
                                       ),
                                   )]
@@ -202,15 +252,14 @@ class Menu extends StatelessWidget {
                                     ),
                                 ]
                             ),
-                            const SizedBox(height: 10),
                             Padding(
                                 padding: EdgeInsets.symmetric(horizontal: MediaQuery.of(context).size.width * 0.10),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(30), // Define o raio dos cantos
                                   child: SizedBox(
-                                      width: 500,
-                                      height: 100,
-                                      child: Image.asset('assets/imagem5.jpg'),
+                                      width: 800,
+                                      child: Image.asset('assets/imgs/imgquiz.png', fit: BoxFit.cover,),
+                                      
                                   ),
                                 ),
                             ),
